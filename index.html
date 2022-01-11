@@ -1,0 +1,180 @@
+<html>
+ <head>
+ <title>IRD Banking</title>
+ <link rel="icon" type="image/jpg" href="images/logo.jpg" />
+ <link rel="stylesheet" href="styles/styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="js/myScript.js"></script>
+ 
+  <!--Logo, Profile and login buttons-->
+ <div>
+	<a href="index.html"><img src="images/logo.jpg" class="logo"></a>
+	<div class="logBtn">
+	<img src="images/profile2.png" class="profile">
+		<div class="btn">
+			<br>
+			<a href="login.php"><input class="login"  type="button" value="LOG IN"></a>
+			<a href="signup.html"><input class="signup"  type="button" value="SiGN UP FOR FREE"></a>
+		</div>
+		<!--Navigation-->
+		<div class="nav"><br>
+		<ul class="menu" align="center" >
+			
+			<li class="menu"> <a class="active" href="#"> Home </a> </li>
+			<li class="menu"> <a href="#"> Exams </a> </li>
+			<li class="menu"> <a href="#"> Results </a> </li>
+			<li class="menu"> <a href="#"> Contact </a> </li>
+			<li class="menu"> <a href="#"> About us </a> </li>
+			<div class="search">
+				<form action="#" method="post">
+				<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
+				<input id="text1" type="text" name="search" placeholder="Search..">
+				</form>
+			</div>
+		</ul>
+		</div>
+	</div>
+ </div>
+
+ 
+ </head>
+ 
+ <body>
+	<br>
+	<hr class="hr1">
+	<!--Slideshow-->
+	<div class="slideshow">
+		<div class="mySlides fade">
+			<div class="number">1 / 4</div>
+			<img src="images/slide1.jpg" height="500px" width="1300px">	 
+		</div>
+		
+		<div class="mySlides fade">
+			<div class="number">2 / 4</div>
+			<img src="images/slide2.jpg" height="500px" width="1300px">	 
+		</div>
+		
+		<div class="mySlides fade">
+			<div class="number">3 / 4</div>
+			<img src="images/slide3.jpg" height="500px" width="1300px">	 
+		</div>
+		
+		<div class="mySlides fade">
+			<div class="number">4 / 4</div>
+			<img src="images/slide4.jpg" height="500px" width="1300px">	 
+		</div>
+		
+		<!--Next Buttons-->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	
+		<!--Dot Buttons-->
+	<div class="dotClass" style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+	
+	<h2 class="welcome"> Welcome to IRD Banking <br> Examinations </h2>
+	
+	
+	<div class="btn1">
+	<ul class="btns">
+		<li> <a href="#"> <i class="fa fa-book"> </a></i><p class="p" style="font-size:15px">Books & Library</p></li>
+		<li> <a href="#"> <i class="fa fa-graduation-cap"> </a></i><p class="p0" style="font-size:15px"> Best Courses</p></li>	
+		<li> <a href="#"> <i class="fa fa-user"> </a></i><p class="p1" style="font-size:15px">Eligibility Check</p></li><br>
+		
+	</ul>
+	</div>
+	
+	
+	
+	<div class="footer-container">
+		<hr>
+		<div class="footer">
+			<div class="footer-heading footer-1 option1 option2">
+				<h2>About Us</h2>
+				<p>IRD Banking Were With You <br> For 20 Years. <br> (Since 2001).</p>
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/login"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+			</div>
+			<div class="footer-heading footer-2 option1 option2">
+				
+				<h2>Quick Links</h2>
+				
+				<a class="active" href="index.html">Home</a><br>
+				<a href="#">Exams</a><br>
+				<a href="#">Results</a><br>
+				<a href="#">Books & Library</a><br>
+				<a href="#">Best Courses</a><br>
+				<a href="#">Awards</a><br>
+				
+				
+			</div>
+			<div class="footer-heading footer-3 option2">
+				<h2>Contact Us</h2>
+				 <ul>
+					<li>No 23/B, Pine Street 1, Colombo 3.</li><br>
+					<li>IRDsupport@IRD.lk</li><br>
+					<li>+(94)117878755</li><br>
+					
+				</ul> 	
+			</div>
+			<div class="footer-heading footer-4 option2">
+				<h2>Maps</h2>
+				<a href="https://goo.gl/maps/EXUFRzFMCEasMyH16"><img class="map" src="images/map.png" height="160px" width="250px"></a>
+			</div>
+		</div>
+	<p class="bottom-text">All Right reserved by &copy;Group_01.02_01</p>
+	</div>
+	
+<script>
+	var slideIndex=1;
+	showSlides(slideIndex);
+
+	//Next button control
+	function plusSlides(n){
+	showSlides(slideIndex += n);
+	}
+
+	//image control
+	function currentSlide(n){
+	showSlides(slideIndex = n);
+	}
+
+	function showSlides(n){
+	
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	
+	if(n > slides.length){
+		slideIndex = 1;
+	}
+	if(n < 1){
+		slideIndex = slides.length;
+	}
+	
+	for(i = 0; i < slides.length; i++){
+		slides[i].style.display = "none";
+	}
+	
+	for(i = 0; i < dots.length; i++){
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+	}
+	
+</script>
+	
+	
+ 
+ </body>
+</html>

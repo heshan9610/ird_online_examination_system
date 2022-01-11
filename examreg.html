@@ -1,0 +1,133 @@
+<! DOCTYPE html >
+<html>
+	<head>
+	<title>Examinations Registrations</title>
+	<link rel="stylesheet" href="styles/sgstyles.css">
+	<script src="js/sgscript.js"></script>
+	<link rel="icon" type="image/jpg" href="images/logo.jpg" />
+ <link rel="stylesheet" href="styles/styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="js/myScript.js"></script>
+ 
+  <!--Logo, Profile and login buttons-->
+ <div>
+	<a href="index after logged in.html"><img src="images/logo.jpg" class="logo"></a>
+	<div class="logBtn">
+	<a href="profiledir.php"><img src="images/profile2.png" class="profile"></a>
+		
+		<!--Navigation-->
+		<div class="nav"><br>
+		<ul class="menu" align="center" >
+			
+			<li class="menu"> <a href="index2.html"> Home </a> </li>
+			<li class="menu"> <a href="exam.html"> Exams </a> </li>
+			<li class="menu"> <a href="result.html"> Results </a> </li>
+			<li class="menu"> <a href="contactus.html"> Contact </a> </li>
+			<li class="menu"> <a href="aboutus.html"> About us </a> </li>
+			<div class="search">
+				<form action="article.php" method="POST">
+				<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
+				<input id="text1" name="search" type="text" placeholder="Search..">
+				</form>
+			</div>
+		</ul>
+		</div>
+	</div>
+ </div>
+
+	</head>
+<body>
+<br>
+<center>
+<div id="div5" style="height:700;width:800;border:3px solid blue">
+<center><h1 style="color:blue">EXAMINATIONS REGISTRATIONS</h1></center>
+<br>
+<form action="submitexam.php" style="border:1px" method = "POST">
+
+<div style="float:left;margin:5px 20px">
+<h3>Employee ID</h3>
+</div>
+
+<div style="float:right;margin:2px 40px;padding:0px 80px">
+<h3>Examination Date</h3>
+</div>
+<div style="float:right;margin:30px 40px;padding:0px 80px">
+<label for="start">choose date:</label>
+
+<input type="date" style="height:50;width:130;border:2px solid black" id="start" name="examdate"
+       value="2021-07-22"
+       min="2021-01-01" max="2021-12-31">
+</div>
+
+<br><br><br><br>
+<div style="float:left"><input type="text" placeholder="Employee ID" style="height:50px;width:220px;margin:12px;border-radius:3px" name="empid" required></div>
+<br><br><br><br><br>
+<div style="float:left;margin:5px 20px">
+<h3>Attempt</h3>
+</div>
+<br><br><br><br>
+
+<div style="float:left;margin:10px">
+<input type="radio" name="attempt" value="attempt 1">Attempt 1<input type="radio" name="attempt" value="attempt 2">Attempt 2<input type="radio" name="attempt" value="attempt 3">Attempt 3
+</div>
+<div style="float:right;margin:-80px 110px;padding:12px 70px">
+<h3>Level</h3>
+</div>
+<br>
+<div style="float:right"><input type="text" placeholder="Level" style="height:45px;width:200px;margin:-25px 80px;border-radius:3px" name="level" required></div>
+<br><br><br><br>
+<div style="margin:2px 2px">
+<input type="checkbox" id="checkbox1" style="margin:10px" onclick="enableButton1()">I hereby agree to the all rules and regulations supervised by the examinations department.
+<br>Note- Examination fees will be deducted from the monthly salary
+</div>
+<br><br>
+<div style=float:right">
+<input type="submit" class="submitBtn" id="submitBtn1" style="height:50px;width:120px;color:white;border-radius:5px" value="Submit" disabled>
+</form>
+</div>
+</center>
+
+	<div class="footer-container">
+		<hr>
+		<div class="footer">
+			<div class="footer-heading footer-1 option1 option2">
+				<h2>About Us</h2>
+				<p>IRD Banking Were With You <br> For 20 Years. <br> (Since 2001).</p>
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/login"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+			</div>
+			<div class="footer-heading footer-2 option1 option2">
+				
+				<h2>Quick Links</h2>
+				
+				<a href="index2.html">Home</a><br>
+				<a href="exam.html">Exams</a><br>
+				<a href="result.html">Results</a><br>
+				<a href="library.html">Books & Library</a><br>
+				<a href="bestCourses.html">Best Courses</a><br>
+				<a href="#">Awards</a><br>
+				
+				
+			</div>
+			<div class="footer-heading footer-3 option2">
+				<h2>Contact Us</h2>
+				 <ul>
+					<li>No 23/B, Pine Street 1, Colombo 3.</li><br>
+					<li>IRDsupport@IRD.lk</li><br>
+					<li>+(94)117878755</li><br>
+					
+				</ul> 	
+			</div>
+			<div class="footer-heading footer-4 option2">
+				<h2>Maps</h2>
+				<a href="https://goo.gl/maps/EXUFRzFMCEasMyH16"><img class="map" src="images/map.png" height="160px" width="250px"></a>
+			</div>
+		</div>
+	<p class="bottom-text">All Right reserved by &copy;Group_01.02_01</p>
+	</div>
+	
+
+</body>
+</html>

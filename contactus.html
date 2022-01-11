@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Connect with us</title>
+ <link rel = "stylesheet" href = "styles/astyles.css"/>
+ <script>
+ function enableButton() {
+	if(document.getElementById("checkbox").checked==true){
+		document.getElementById("submitBtn").disabled=false;
+	}else{
+		document.getElementById("submitBtn").disabled=true;
+	}
+}	
+</script>
+
+<link rel="icon" type="image/jpg" href="images/logo.jpg" />
+ <link rel="stylesheet" href="styles/styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="js/myScript.js"></script>
+ 
+  <!--Logo, Profile and login buttons-->
+ <div>
+	<a href="index after logged in.html"><img src="images/logo.jpg" class="logo"></a>
+	<div class="logBtn">
+	<a href="profiledir.php"><img src="images/profile2.png" class="profile"></a>
+		
+		<!--Navigation-->
+		<div class="nav"><br>
+		<ul class="menu" align="center" >
+			
+			<li class="menu"> <a href="index2.html"> Home </a> </li>
+			<li class="menu"> <a href="exam.html"> Exams </a> </li>
+			<li class="menu"> <a href="result.html"> Results </a> </li>
+			<li class="menu"> <a class="active" href="#"> Contact </a> </li>
+			<li class="menu"> <a href="aboutus.html"> About us </a> </li>
+			<div class="search">
+				<form action="article.php" method="POST">
+				<button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
+				<input id="text1" name="search" type="text" placeholder="Search..">
+				</form>
+			</div>
+		</ul>
+		</div>
+	</div>
+ </div>
+
+</head>
+<body>
+<br><br><br><br><br>
+
+<div id="div1" style="height:900px;width:1300px;border:3px solid blue">
+
+
+<fieldset>
+<form action="submitcontactus.php" style="border:1px" method = "POST" >
+<center><h1 style="color:blue">Connect With Us</h1></center>
+<center><b><h2>SEND YOUR REQUEST</h2></b></center>
+
+<p>Name<br/><br/> <input type = "text" placeholder="Name" style="height:40px;width:450px" name="name" required></p>
+
+<p>Email <br/><br/><input type = "email" placeholder="E mail" style="height:40px;width:450px" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" name="email" required></p>
+
+<div style = "float:right">
+<p>For a better examination experience,<br/>Let us know what's on your mind</p>
+</div>
+
+<p>Phone<br/> <br/><input type = "text" placeholder="Phone" style="height:40px;width:450px" name="phone" required></p>
+
+<p>Subject <br/><br/><input type = "text" placeholder="Subject" style="height:40px;width:450px" name="subject" required></p>
+
+<p>Message <br/><br/><Textarea rows = "5" cols = "30" placeholder="Message" style="height:70px;width:450px" name="message" required></Textarea></p>
+
+<div style="float:left">
+<input type="checkbox" id="checkbox" style="margin:20px" onclick="enableButton()">I hereby accept all the terms and conditions
+</div>
+<div style = "float:right">
+<input type = "submit" id="submitBtn" value = "Submit" style ="height:35px;width:150px;color:white;margin:20px">
+</div >
+<div style="float:right">
+<input type="reset" id="reset" value="Reset" style="height:35px;width:150px;color:white;margin:20px">
+</div>
+</form>
+</fieldset>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+	<div class="footer-container">
+		<hr>
+		<div class="footer">
+			<div class="footer-heading footer-1 option1 option2">
+				<h2>About Us</h2>
+				<p>IRD Banking Were With You <br> For 20 Years. <br> (Since 2001).</p>
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/login"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+			</div>
+			<div class="footer-heading footer-2 option1 option2">
+				
+				<h2>Quick Links</h2>
+				
+				<a href="index2.html">Home</a><br>
+				<a href="exam.html">Exams</a><br>
+				<a href="result.html">Results</a><br>
+				<a href="library.html">Books & Library</a><br>
+				<a href="bestCourses.html">Best Courses</a><br>
+				<a href="#">Awards</a><br>
+				
+				
+			</div>
+			<div class="footer-heading footer-3 option2">
+				<h2>Contact Us</h2>
+				 <ul>
+					<li>No 23/B, Pine Street 1, Colombo 3.</li><br>
+					<li>IRDsupport@IRD.lk</li><br>
+					<li>+(94)117878755</li><br>
+					
+				</ul> 	
+			</div>
+			<div class="footer-heading footer-4 option2">
+				<h2>Maps</h2>
+				<a href="https://goo.gl/maps/EXUFRzFMCEasMyH16"><img class="map" src="images/map.png" height="160px" width="250px"></a>
+			</div>
+		</div>
+	<p class="bottom-text">All Right reserved by &copy;Group_01.02_01</p>
+	</div>
+
+</body>
+</html>

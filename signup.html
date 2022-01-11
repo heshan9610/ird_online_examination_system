@@ -1,0 +1,141 @@
+<! DOCTYPE html >
+<html>
+	<head>
+	<title>Sign up</title>
+	<link rel="stylesheet" href="styles/sgstyles.css">
+	<script src="js/sgscript.js"></script>
+	 <link rel="icon" type="image/jpg" href="images/logo.jpg" />
+ <link rel="stylesheet" href="styles/styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="js/myScript.js"></script>
+ 
+  <!--Logo, Profile and login buttons-->
+ <div>
+	<a href="index after logged in.html"><img src="images/logo.jpg" class="logo"></a>
+	<div class="logBtn">
+	<img src="images/profile2.png" class="profile">
+		
+		<!--Navigation-->
+		<div class="nav"><br>
+		<ul class="menu" align="center" >
+			
+			<li class="menu"> <a href="index.html"> Home </a> </li>
+			<li class="menu"> <a href="#"> Exams </a> </li>
+			<li class="menu"> <a href="#"> Results </a> </li>
+			<li class="menu"> <a href="#"> Contact </a> </li>
+			<li class="menu"> <a href="#"> About us </a> </li>
+			<div class="search">
+				<form action="#" method="POST">
+				<button type="submit"><i class="fa fa-search"></i></button>
+				<input id="text1" type="text" placeholder="Search..">
+				</form>
+			</div>
+		</ul>
+		</div>
+	</div>
+ </div>
+
+	</head>
+<body>
+<br><br>
+<center>
+<div id="div1" style="height:750px;width:1100px;border:3px solid blue">
+<form action="submitsignup.php" style="border:1px" method = "POST" onSubmit="return checkPassword()">
+
+
+<br><br>
+	<center><h1 style="color:blue">SIGN UP</h1></center>
+	<center><h4>Create your account and sign up for free</h4></center>
+	
+	<div><center>
+	<div style="float:left"><input type="text" placeholder="First name" style="height:50px;width:500px;margin:25px;border-radius:3px" name="firstname" required></div>
+	<div style="float:right"><input type="text" placeholder="Last name" style="height:50px;width:500px;margin:25px;border-radius:3px" name="lastname" required></div>
+	</center></div>
+	<br>
+	<div><center>
+	<div style="float:left"><input type="text" placeholder="Employee ID" style="height:40px;width:500px;margin:25px;border-radius:3px" name="empid" required></div>
+	<div style="float:right"><input type="text" placeholder="National ID" style="height:40px;width:500px;margin:25px;border-radius:3px" name="nationalid" required></div>
+	</center></div>
+	<br>
+	<div><center>
+	<div style="float:left"><input type="email" placeholder="E mail" style="height:40px;width:500px;margin:25px;border-radius:3px" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" name="email" required></div>
+	<div style="float:right"><input type="text" placeholder="Contact No." pattern="[0-9]{10}" style="height:40px;width:500px;margin:25px;border-radius:3px" name="contactno" required></div>
+	</center></div>
+	<br>
+	<div><center>
+	<div style="float:left"><input type="password" id="pwd" placeholder="Password" name="pwd" style="height:40px;width:500px;margin:25px;border-radius:3px" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}" required></div>
+	<div style="float:right"><input type="password" style="height:40px;width:500px;margin:25px;border-radius:3px" placeholder="Confirm Password" id="cnfrmpwd"  name="cnfrmpwd" required></div>
+	</center><br><br><br><br><br><br><br><br><br></div>
+	<br><br><br>
+	<div style="float:right">
+	<input type="reset" id="reset" value="Reset" style="height:35px;width:150px;color:white;margin:10px;border-radius:10px">
+	</div>
+	<br><br><br>
+	<div style="float:left">
+	<input type="checkbox" id="checkbox" style="margin:10px" onclick="enableButton()">I hereby accept all the terms and conditions
+	</div>
+	<br><br><br><br><br><br>
+	<div><center>
+	<input type="submit" class="submitBtn" id="submitBtn" style="height:60px;width:400px;color:white;border-radius:5px" value="REGISTER" disabled>
+	</center></div><br>
+	<div><center>
+	<h5>If you already have an account click <a href="login.php">here</a> to login</h5>
+	
+	</center></div>
+<br>
+
+
+</form>
+</div>
+</center>
+
+	<div class="footer-container">
+		<hr>
+		<div class="footer">
+			<div class="footer-heading footer-1 option1 option2">
+				<h2>About Us</h2>
+				<p>IRD Banking Were With You <br> For 20 Years. <br> (Since 2001).</p>
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/login"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+			</div>
+			<div class="footer-heading footer-2 option1 option2">
+				
+				<h2>Quick Links</h2>
+				
+				<a class="active" href="index.html">Home</a><br>
+				<a href="#">Exams</a><br>
+				<a href="#">Results</a><br>
+				<a href="#">Books & Library</a><br>
+				<a href="#">Best Courses</a><br>
+				<a href="#">Awards</a><br>
+				
+				
+			</div>
+			<div class="footer-heading footer-3 option2">
+				<h2>Contact Us</h2>
+				 <ul>
+					<li>No 23/B, Pine Street 1, Colombo 3.</li><br>
+					<li>IRDsupport@IRD.lk</li><br>
+					<li>+(94)117878755</li><br>
+					
+				</ul> 	
+			</div>
+			<div class="footer-heading footer-4 option2">
+				<h2>Maps</h2>
+				<a href="https://goo.gl/maps/EXUFRzFMCEasMyH16"><img class="map" src="images/map.png" height="160px" width="250px"></a>
+			</div>
+		</div>
+	<p class="bottom-text">All Right reserved by &copy;Group_01.02_01</p>
+	</div>
+	
+
+
+</body>
+</html>	
+	
+	
+	
+	
+	
